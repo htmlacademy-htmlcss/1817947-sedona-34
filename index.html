@@ -4,9 +4,170 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
   </head>
+
   <body>
+    <div class="page-container">
+    <header class="main-header">
+      <nav class="navigation">
+        <a class="main-header-logo">
+          <img src="#" width="139" height="70" alt="Логотип Седона.">
+        </a>
+        <ul class="navigation-list">
+          <li class="navigation-item"><a class="navigation-link navigation-link-current" href="#" aria-current="page">Главная</a></li>
+          <li class="navigation-item"><a class="navigation-link" href="about.html">О Седоне</a></li>
+          <li class="navigation-item"><a class="navigation-link" href="catalog.html">Гостиницы</a></li>
+        </ul>
+        <ul class="navigation-user">
+          <li class="navigation-user-item"><a class="navigation-link" href="#"><img src="#" width="42" height="66" alt="Логотип для поиска."><span class="visually-hidden">Поиск</span></a></li>
+          <li class="navigation-user-item"><a class="navigation-link" href="#"><img src="#" width="42" height="66" alt="Количество избранного."><span class="visually-hidden">Избранное</span></a></li>
+          <li class="navigation-user-item"><a class="navigation-link" href="#"><span class="link-button">Хочу сюда!</span></a></li>
+        </ul>
+      </nav>
+    </header>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>
+    <main class="container">
 
+      <div class=foto-wrapper>
+        <img class="welcome-sedona" src="#" width="458" height="352" alt="Welcome to the gorgeous Sedona. Because the Grand Canyon sucks!">
+      </div>
+      <div class="about-sedona">
+        <h2>Седона — небольшой городок в Аризоне,<br>заслуживающий большего!</h2>
+        <p> Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
+      </div>
+
+      <section class="advantages">
+        <h2 class="visually-hidden">Преимущества</h2>
+        <div class="advantages-point">
+          <p class="advantages-point-title">Настоящий<br>городок</p>
+          <p>— №1 —</p>
+          <p>Седона — не аттракцион для<br>туристов, там течёт своя<br>жизнь</p>
+          <img src="#" width="800" height="384" alt="Седона, красивые дома.">
+        </div>
+        <ul class="advantages-list">
+          <li class="advantages-item">
+            <img src="#" width="75" height="72" alt="Изображение дома.">
+            <p class="advantages-item-title">Жильё</p>
+            <p>Рекомендуем пожить<br>в настоящем мотеле,<br>всё как в кино!</p>
+          </li>
+          <li class="advantages-item-food">
+            <img src="#" width="75" height="72" alt="Изображение бургера.">
+            <p class="advantages-item-title">Еда</p>
+            <p>Всегда заказывайте<br>топовый фирменный бургер,<br>вы не разочаруетесь!</p>
+          </li>
+          <li class="advantages-item">
+            <img src="#" width="75" height="72" alt="Изображение подарочной коробки.">
+            <p class="advantages-item-title">Сувениры</p>
+            <p>Не только китайского,<br>но и настоящего местного<br>производства!</p>
+          </li>
+        </ul>
+        <div class="advantages-point">
+          <img src="#" width="800" height="384" alt="Мост дьявола природного происхождения.">
+          <p class="advantages-point-title">Там есть<br>мост дьявола</p>
+          <p>— №2 —</p>
+          <p>Да, по нему можно пройти!<br>Если вы осмелитесь,<br>разумеется</p>
+        </div>
+        <ul class="advantages-list">
+          <li>
+            <p class="advantages-item-title">Небольшая<br>площадь</p>
+            <p>— №3 —</p>
+            <p>Все достопримечательности<br>находятся очень близко</p>
+          </li>
+          <li class="advantages-item-road">
+            <p class="advantages-item-title">Красивая<br>дорога</p>
+            <p>— №4 —</p>
+            <p>Ехать в Седону из Лас-Вегаса<br>совсем не скучно!</p>
+          </li>
+          <li>
+            <p class="advantages-item-title">Мало<br>туристов</p>
+            <p>— №5 —</p>
+            <p>Большинство едет в Гранд<br>Каньон и толпится там</p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="hotel-search">
+        <h2 class="visually-hidden">Поиск гостиницы</h2>
+        <p class="hotel-search-title">Заинтересовались?</p>
+        <p class="hotel-search-info">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+        <button class="button button-search" type="button">Поиск гостиницы в Седоне</button>
+      </section>
+
+    </main>
+
+    <footer class="main-footer">
+      <div class='newsletter-container'>
+      <div class="newsletter">
+        <h2 class="visually-hidden">Подписка на рассылку</h2>
+        <p class="newsletter-info">Подпишитесь на рассылку</p>
+        <p>Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
+
+        <!---ФОРМА ПОДПИСКИ НА РАССЫЛКУ-->
+
+        <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
+          <label class="visually-hidden" for="newsletter-email">Email</label>
+          <input class="field"  placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
+          <button class="button button-newsletter" type="submit">Подписаться</button>
+        </form>
+      </div>
+    </div>
+
+      <section class="footer-contacts">
+        <h2 class="visually-hidden">Контакты</h2>
+        <ul class="social-button-list">
+          <li class="social-button-item"><a class="social" href="https://vk.com/htmlacademy"><img src="#" width="24" height="14" alt="Логотип для Вконтакте."><span class="visually-hidden">Вконтакте</span></a></li>
+          <li class="social-button-item"><a class="social" href="https://t.me/htmlacademy"><img src="#" width="24" height="14" alt="Логотип для Телеграмм."><span class="visually-hidden">Телеграмм</span></a></li>
+          <li class="social-button-item"><a class="social" href="https://www.youtube.com/htmlacademyru"><img src="#" width="14" height="15" alt="Логотип для Youtube."><span class="visually-hidden">Youtube</span></a></li>
+        </ul>
+        <div class="footer-telephone">
+          <a class="telephone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+        </div>
+        <div class="footer-logo">
+          <a href="https://htmlacademy.ru"><img src="#" width="115" height="33" alt="Логотип html academy."></a>
+        </div>
+      </section>
+    </footer>
+
+
+    <!---ФОРМА ПОИСКА ГОСТИНИЦЫ-->
+
+
+    <form class="reservation" action="https://echo.htmlacademy.ru" method="post">
+      <h2 class="search-title">Поиск гостиницы в седоне</h2>
+      <button class="button button-close" type="button">Закрыть</button>
+      <div class="reservation-arrival">
+        <label class="reservation-arrival-label" for="arrival-date">Дата заезда:</label>
+        <input class="reservation-item-input" type="text" id="arrival-date" name="arrival-date" placeholder="27 Апреля 2020">
+        <button class="icon-calendar" type="button">Календарь</button>
+        <p class="reservation-status-error">Мы не можем отправить вас в прошлое</p>
+      </div>
+      <div class="reservation-departure">
+        <label class="reservation-departure-label" for="departure-date">Дата выезда:</label>
+        <input class="reservation-item-input" type="text" id="departure-date" name="departure-date" placeholder="1 сентября 2021">
+        <button class="icon-calendar" type="button">Календарь</button>
+        <p class="reservation-status">На эти даты есть свободные номера. Пока есть.</p>
+
+      </div>
+
+      <div class="reservation-item">
+        <label class="reservation-item-label" for="adult">Взрослые:</label>
+        <button class="button-minus" type="button" id="amount-adult-minus"><span>-</span></button>
+        <input class="reservation-item" type="number" min="1" max="10" name="adult" value="2" id="adult">
+        <button class="button-plus" type="button" id="amount-adult-plus"><span>+</span></button>
+
+        <label class="reservation-item-label" for="children">Дети:</label>
+        <span>i</span>
+        <div class="reservation-item-popup">
+          <p class="reservation-item-popup">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</p>
+        </div>
+        <button class="button-minus" type="button" id="amount-children-minus"><span>-</span></button>
+        <input class="reservation-item" type="number" min="0" max="10" name="children" value="1" id="children">
+        <button class="button-plus" type="button" id="amount-children-plus"><span>+</span></button>
+      </div>
+      <button class="button button-form" type="submit">Найти</button>
+    </form>
+  </div>
   </body>
+
+
+
 </html>
